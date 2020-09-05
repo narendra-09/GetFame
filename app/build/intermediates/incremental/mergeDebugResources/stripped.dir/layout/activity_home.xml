@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.HomeActivity">
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_alignParentBottom="true"
+    app:itemHorizontalTranslationEnabled="true"
+    android:background="@drawable/bottom_nav_background"
+    app:elevation="0dp"
+    android:layoutMode="opticalBounds"
+    android:soundEffectsEnabled="true"
+    android:padding="10dp"
+    app:menu="@menu/menu"
+    app:labelVisibilityMode="unlabeled"
+    app:itemIconSize="26dp" />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.EmailFragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/mail_for_everything"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp"
+    />
+<EditText
+    android:id="@+id/email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:hint="@string/email"
+    android:inputType="textEmailAddress"
+    android:importantForAutofill="no" />
+<Button
+    android:id="@+id/next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_style"
+    android:text="@string/next"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp"/>
+
+</LinearLayout>

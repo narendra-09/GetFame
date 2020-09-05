@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/relative_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/feed_profile_image"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_two"
+        android:contentDescription="@string/profile" />
+    <TextView
+        android:id="@+id/feed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_s_your_name"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/feed_profile_image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        />
+</RelativeLayout>
+<androidx.cardview.widget.CardView
+    android:id="@+id/relative_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_below="@id/relative_one">
+<ImageView
+    android:id="@+id/feed_actual_image"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:src="@drawable/rohit"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/actual_photo"
+    />
+</androidx.cardview.widget.CardView>
+<RelativeLayout
+    android:id="@+id/relative_three"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative_two">
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_margin="10dp"
+    android:src="@drawable/heart_liked"
+    android:contentDescription="@string/like"/>
+
+</RelativeLayout>
+</RelativeLayout>

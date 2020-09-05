@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.CameraActivity">
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/close_camera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/close_camera"
+        android:src="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/torch_image"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/flash"
+        android:src="@drawable/flash_off" />
+
+    <ImageView
+        android:id="@+id/image_capture"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/image_capture"
+        android:src="@drawable/photograph" />
+
+    <ImageView
+        android:id="@+id/touch_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/touch"
+        android:src="@drawable/focus"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/add_images"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/add_images"
+        android:src="@drawable/add_image" />
+
+    <ImageView
+        android:id="@+id/flip_cameras"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/flip_cameras"
+        android:src="@drawable/flip" />
+    <SeekBar
+        android:id="@+id/zoomSeekBar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:progressBackgroundTint="@color/colorAccent"
+        android:progressTint="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/close_camera"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

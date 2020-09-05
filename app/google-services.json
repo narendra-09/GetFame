@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "944341209258",
+    "firebase_url": "https://getfame-2305b.firebaseio.com",
+    "project_id": "getfame-2305b",
+    "storage_bucket": "getfame-2305b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944341209258:android:04c07c0de5c97ad8a7c0d3",
+        "android_client_info": {
+          "package_name": "com.example.getfame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944341209258-5fm3kn0drd74feukdr5nl78spn28vsh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWN2ZS39wbM9akCu2BCR53VGNwbMGwa08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944341209258-5fm3kn0drd74feukdr5nl78spn28vsh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

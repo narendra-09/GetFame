@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SearchFragment">
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/add_friends"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    />
+<EditText
+    android:id="@+id/search_box"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@id/title"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:inputType="text"
+    android:paddingStart="30dp"
+    android:paddingEnd="50dp"
+    android:importantForAutofill="no"
+    android:hint="@string/search"
+    android:background="@drawable/search_box"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="-90dp"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/search_box"
+        android:contentDescription="@string/search"
+        android:src="@drawable/search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_box"
+        android:layout_marginBottom="65dp"/>
+</RelativeLayout>
