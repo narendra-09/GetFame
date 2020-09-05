@@ -7,11 +7,11 @@ Language - Java
 Technologies
 ____________
 
-CameraX
-Firebase
-Firebase FireStore
-Firebase Storage
-Glide
-ViewModels
-LiveData
+CameraX |
+Firebase |
+Firebase FireStore |
+Firebase Storage |
+Glide |
+ViewModels |
+LiveData |
 ViewBinding
